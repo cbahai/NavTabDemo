@@ -14,6 +14,7 @@
 		591B131D1B39087800B9B348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591B131B1B39087800B9B348 /* LaunchScreen.storyboard */; };
 		591B13281B39087800B9B348 /* NavTabDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591B13271B39087800B9B348 /* NavTabDemoTests.swift */; };
 		591B13331B39087800B9B348 /* NavTabDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591B13321B39087800B9B348 /* NavTabDemoUITests.swift */; };
+		591B13421B39090A00B9B348 /* NavTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591B13411B39090A00B9B348 /* NavTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		591B132E1B39087800B9B348 /* NavTabDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavTabDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		591B13321B39087800B9B348 /* NavTabDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTabDemoUITests.swift; sourceTree = "<group>"; };
 		591B13341B39087800B9B348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591B13411B39090A00B9B348 /* NavTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		591B13111B39087800B9B348 /* NavTabDemo */ = {
 			isa = PBXGroup;
 			children = (
+				591B13401B3908C000B9B348 /* NavTab */,
 				591B13121B39087800B9B348 /* AppDelegate.swift */,
 				591B13141B39087800B9B348 /* ViewController.swift */,
 				591B13161B39087800B9B348 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				591B13341B39087800B9B348 /* Info.plist */,
 			);
 			path = NavTabDemoUITests;
+			sourceTree = "<group>";
+		};
+		591B13401B3908C000B9B348 /* NavTab */ = {
+			isa = PBXGroup;
+			children = (
+				591B13411B39090A00B9B348 /* NavTab.swift */,
+			);
+			path = NavTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			files = (
 				591B13151B39087800B9B348 /* ViewController.swift in Sources */,
 				591B13131B39087800B9B348 /* AppDelegate.swift in Sources */,
+				591B13421B39090A00B9B348 /* NavTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

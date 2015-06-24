@@ -8,18 +8,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, NavTabDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let tabNames = ["hhiiu", "dddiui", "fffiig", "ddfddd", "ffdsffg", "dfdsfsdd", "ffffdsfg", "dddfsdf", "fffdsfdsfg", "ddfdsfd", "fffdsfsfg"]
+        let navTab = NavTab(datas: tabNames, selectedIndex: 5, tabWidth: 70, totalWidth: view.frame.width, totalHeight: 40)
+        navTab.navTabDelegate = self
+        
+        var navTabFrame = navTab.frame
+        navTabFrame.origin.y = 100
+        navTab.frame = navTabFrame
+        self.view.addSubview(navTab)
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    // MARK: - NavTabDelegate
+    func onTabButtonPressed(index: Int) {
+        print("点击了第" + String(index + 1) + "个")
+    }
+    
 }
 
