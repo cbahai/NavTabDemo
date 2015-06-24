@@ -94,6 +94,12 @@ class NavTab: UIScrollView {
         return Int(count)
     }
     
+    // 总长减去完整Tab的长剩下的长度
+    func remainLength() -> CGFloat {
+        let length = frame.width % tabWidth
+        return length
+    }
+    
     func scrollToSelectedIndex() {
         let tempDisplayCount = displayCount()
         if selectedIndex >= tempDisplayCount {
@@ -103,16 +109,18 @@ class NavTab: UIScrollView {
     }
     
     func autoScroll() {
-        let tempDisplayCount = displayCount()
-        // 尝试往后移
-        if selectedIndex < datas.count - 1 {
+        if selectedIndex == 0 {
+            setContentOffset(CGPointMake(0, 0), animated: true)
+        } else if selectedIndex == datas.count - 1 {
+            setContentOffset(CGPointMake(tabWidth * CGFloat(datas.count) - frame.width, 0), animated: true)
+        } else {
+            let tempDisplayCount = displayCount()
+            // 尝试往后移
             if tabWidth * CGFloat(selectedIndex) >= contentOffset.x + tabWidth * (CGFloat(tempDisplayCount) - 1) - tabWidth * 0.5 {
-                let point = CGPointMake(tabWidth * CGFloat(selectedIndex - (tempDisplayCount - 2)), 0)
+                let point = CGPointMake(tabWidth * CGFloat(selectedIndex - (tempDisplayCount - 2)) - remainLength(), 0)
                 setContentOffset(point, animated: true)
             }
-        }
-        // 尝试往前移
-        if selectedIndex > 0 {
+            // 尝试往前移
             if tabWidth * CGFloat(selectedIndex) <= contentOffset.x + tabWidth * 0.5 {
                 let point = CGPointMake(tabWidth * CGFloat(selectedIndex - 1), 0)
                 setContentOffset(point, animated: true)
