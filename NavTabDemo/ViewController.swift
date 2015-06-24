@@ -3,7 +3,7 @@
 //  NavTabDemo
 //
 //  Created by 冯勇海 on 15/6/23.
-//  Copyright © 2015年 Chai. All rights reserved.
+//  Copyright © 2015年 Chai. All rights reserved..
 //
 
 import UIKit
