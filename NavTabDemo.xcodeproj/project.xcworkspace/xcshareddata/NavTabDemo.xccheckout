@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>853933DF-11DA-4B78-94EB-4EC67B35E6A9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NavTabDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AD3FFA9991990C39E7AD16B8F16CF1B4794A4224</key>
+		<string>ssh://192.168.0.112:10022/fengyonghai/CeShi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NavTabDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AD3FFA9991990C39E7AD16B8F16CF1B4794A4224</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://192.168.0.112:10022/fengyonghai/CeShi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AD3FFA9991990C39E7AD16B8F16CF1B4794A4224</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AD3FFA9991990C39E7AD16B8F16CF1B4794A4224</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NavTabDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
